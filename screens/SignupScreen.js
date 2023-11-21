@@ -1,7 +1,6 @@
 // screens/SignScreen.js
 import React, { useState ,useEffect} from 'react';
 import { View, Text, TextInput,Button, TouchableOpacity, StyleSheet } from 'react-native';
-import * as Font from 'expo-font';
 import Heder from './Heder';
 import Custmbutton from "./Custmbutton.js"
 import Linkcomponents from './Linkcomponents';
@@ -23,23 +22,8 @@ export default function SignScreen({ navigation }) {
       console.log('confirmPassword failed. Please try again.');
     }
   };
-  const [fontLoaded, setFontLoaded] = useState(false);
 
-  useEffect(() => {
-    async function loadFont() {
-      await Font.loadAsync({
-        // 'Cairo': require('/Users/slmyahmd/login-app-signup/assets/Cairo-Regular.ttf'),
 
-      });
-      setFontLoaded(true);
-    }
-
-    loadFont();
-  }, []);
-
-  if (!fontLoaded) {
-    return <View />;
-  }
 
   return (
   

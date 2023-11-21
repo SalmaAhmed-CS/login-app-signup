@@ -1,16 +1,12 @@
 // screens/LoginScreen.js
 import React, { useState ,useEffect} from 'react';
 import { View, Text, TextInput,Button, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import { useFonts } from 'expo-font';
 import Heder from './Heder';
 import Custmbutton from "./Custmbutton.js"
-import CairoFont from '/Users/slmyahmd/login-app-signup/assets/Cairo.ttf';
 import Linkcomponents from './Linkcomponents';
 
 export default function LoginScreen({ navigation }) {
-  const [fontsLoaded] = useFonts({
-    Cairo: CairoFont,
-  });
+ 
 
 
   const [phonenum, setPhonenum] = useState('');
