@@ -7,9 +7,6 @@ function Linkcomponents({text1,text2,onpress}) {
         <Text style={styles.signupLink}>{text1}<Text style={styles.signupText} onPress={onpress}>{text2} </Text>
          </Text>
     </View>
-
-
-
   )
 }
 

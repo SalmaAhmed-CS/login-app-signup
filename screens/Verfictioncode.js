@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, ImageBackground,StyleSheet ,Image,SafeAreaView} from 'react-native';
 import  { useState } from 'react';
-import Heder from './Heder';
 import Linkcomponents from'./Linkcomponents'
 import Custmbutton from './Custmbutton';
 import { Cursor, useBlurOnFulfill, useClearByFocusCell } from 'react-native-confirmation-code-field';
@@ -23,13 +22,11 @@ const Verfictioncode = ({navigation}) => {
 
   const handleVerification = () => {
 
-    const expectedCode = '3066'; // Replace with the actual expected verification code
+    const expectedCode = '3066'; 
     if (value === expectedCode) {
       console.log('Verification successful!');
-      // Implement the logic you want to perform after successful verification
     } else {
       console.log('Verification failed. Please try again.');
-      // Implement the logic for failed verification (e.g., show an error message)
     }
   };
   return (
@@ -62,7 +59,6 @@ const Verfictioncode = ({navigation}) => {
         ref={ref}
         {...props}
         caretHidden={false} 
-        // Use `caretHidden={false}` when users can't paste a text value, because context menu doesn't appear
         value={value}
         onChangeText={setValue}
         cellCount={CELL_COUNT}
@@ -94,9 +90,7 @@ const Verfictioncode = ({navigation}) => {
         </View>
      
       </View>
-      <View style={styles.backgroundContainer}>
-        {/* ... Background container */}
-      </View>
+      
     </View>
   );
 };

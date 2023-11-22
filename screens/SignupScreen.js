@@ -93,10 +93,7 @@ export default function SignScreen({ navigation }) {
 
               />
             </View>
-            <View style={styles.passwordInputBox}>
-          
-              <View style={styles.passwordIcon} />
-            </View>
+            
           </View>
         </View>
 
@@ -111,29 +108,17 @@ export default function SignScreen({ navigation }) {
       
               />
             </View>
-           
-
-            <View style={styles.passwordInputBox}>
-          
-              <View style={styles.passwordIcon} />
-            </View>
           </View>
         </View>
       </View>
 
     </View>
  
-
-
-    <View style={styles.signup}>
-    <View >
-      <Text style={styles.signupText_2}>
-        بالاستمرار أنت موافق على إقرار
-      </Text>
-      <Text style={styles.signupLink_2}>
-        الموافقة العامة وحقوق المستفيد
-      </Text>
-    </View>
+    <Linkcomponents
+          onpress= {() => navigation.navigate('Signup')} 
+          text1={"بالاستمرار أنت موافق على إقرار"}
+          text2={"  الموافقة العامة وحقوق المستفيد"}
+          />
     <TouchableOpacity style={styles.loginButton}>
         <Custmbutton
         name={"تسجيل "}
@@ -148,7 +133,7 @@ export default function SignScreen({ navigation }) {
           text2={ "تسجيل دخول"}
           />
     </View>
-  </View>
+
   );
 };
 

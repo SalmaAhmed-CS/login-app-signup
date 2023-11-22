@@ -1,6 +1,6 @@
 // screens/LoginScreen.js
-import React, { useState ,useEffect} from 'react';
-import { View, Text, TextInput,Button, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import Heder from './Heder';
 import Custmbutton from "./Custmbutton.js"
 import Linkcomponents from './Linkcomponents';
@@ -149,9 +149,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
 
   },
-  innerCircle: {
-    // Styles for the inner circle
-  },
+
   notificationIcon: {
     width: 60,
     height: 11,
@@ -320,18 +318,7 @@ textInput:{
     fontWeight: '400',
     lineHeight: 24,
   },
-  inputBox: {
-    width: '100%',
-    height: '100%',
-    // Add styles for your input component
-  },
-  passwordInputBox: {
-    width: '100%',
-    height: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    // Add styles for your password input component
-  },
+
   passwordIcon: {
     width: 16,
     height: 16,

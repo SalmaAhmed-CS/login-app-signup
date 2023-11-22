@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text , TouchableOpacity, Image, StyleSheet } from 'react-native';
-import * as Font from 'expo-font';
 function Custmbutton({name ,onpress}) {
   return (
    
